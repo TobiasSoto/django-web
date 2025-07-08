@@ -1,5 +1,5 @@
 section {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,4 +63,9 @@ footer h2 {
 
 .boton-enviar:hover {
   background-color: #ffa500;
+}
+.StyleMantenimiento {
+  background-image: url(./imagenes/Plantacion_exteriores.jpg);
+    background-size: cover;
+    background-position: center bottom;
 }
