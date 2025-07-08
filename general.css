@@ -27,7 +27,9 @@ header ul {
 }
 
 header ul li {
-    margin: 0 15px;
+    margin: 0 auto;
+    width: fit-content;
+    list-style: none;
 }
 
 header ul li a {
