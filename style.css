@@ -1,5 +1,5 @@
 section {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -136,4 +136,10 @@ form textarea {
 form textarea {
     height: 100px;
     resize: none;
+}
+
+.StyleMantenimiento {
+  background-image: url(./imagenes/Plantacion_exteriores.jpg);
+    background-size: cover;
+    background-position: center bottom;
 }
