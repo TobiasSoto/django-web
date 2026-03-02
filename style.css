@@ -8,6 +8,17 @@ section {
     padding-bottom: 30px;
 }
 
+#sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+#sobre h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
 section h2 {
     color: #ffd700;
     font-size: 2.5em;
@@ -28,7 +39,8 @@ article h3 {
 }
 
 p {
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
     font-size: 1.1em;
     line-height: 1.6;
     text-align: justify;
@@ -42,6 +54,8 @@ img {
     margin-top: 20px;
     border: 5px solid #8b0000;
     border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 footer h2 {
@@ -63,4 +77,63 @@ footer h2 {
 
 .boton-enviar:hover {
   background-color: #ffa500;
+}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+        width: 95%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    #sobre {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
 }
